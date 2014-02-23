@@ -25,7 +25,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 			<?php echo $this->Html->link('CakePHP', '/'); ?> -
 			<?php echo $this->Html->link('Sobre o Evento', array(
 		'controller' => 'pages', 'action' => 'display', 'about')); ?> -
-			<?php echo $this->Html->link('Como Chegar', , array(
+			<?php echo $this->Html->link('Como Chegar', array(
 		'controller' => 'pages', 'action' => 'display', 'location')); ?> 
 		</div>
 		<div id="content">
