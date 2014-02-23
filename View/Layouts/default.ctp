@@ -23,8 +23,10 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 		<div id="header">
 			<h1>Aula CakePHP Assando-Sites</h1>
 			<?php echo $this->Html->link('CakePHP', '/'); ?> -
-			<?php echo $this->Html->link('Sobre o Evento', '/sobre-o-evento'); ?> -
-			<?php echo $this->Html->link('Como Chegar', '/como-chegar'); ?>
+			<?php echo $this->Html->link('Sobre o Evento', array(
+		'controller' => 'pages', 'action' => 'display', 'about')); ?> -
+			<?php echo $this->Html->link('Como Chegar', , array(
+		'controller' => 'pages', 'action' => 'display', 'location')); ?> 
 		</div>
 		<div id="content">
 			<?php echo $this->Session->flash(); ?>
